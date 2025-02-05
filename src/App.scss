@@ -3,20 +3,20 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 300px;
-  .form-1 {
-    width: 450px;
-    position: relative;
-    img {
-      position: absolute;
-      left: 18px;
-      top: 18px;
-    }
+}
+.form-1 {
+  width: 450px;
+  position: relative;
+  img {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+  }
 
-    .main-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
+  .main-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 }
 
@@ -59,6 +59,73 @@
   img {
     display: block;
     margin: 0 auto;
+  }
+  margin-bottom: 200px;
+}
+
+.section-4 {
+  display: flex;
+  justify-content: space-between;
+  .s4-title {
+    width: 35%;
+    h1 {
+      margin-bottom: 30px;
+    }
+    .primary-text {
+      margin-bottom: 60px;
+    }
+  }
+  .s4-cards {
+    width: 54%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 30px;
+    margin-bottom: 200px;
+  }
+}
+
+.section-5 {
+  .s5-main {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  img {
+    width: 45%;
+  }
+  p {
+    width: 45%;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.78);
+    letter-spacing: 0.7px;
+  }
+  .pos {
+    position: absolute;
+    width: 150px;
+    top: 180px;
+    left: 640px;
+    z-index: -1;
+  }
+  margin-bottom: 200px;
+}
+
+.section-6 {
+  .s2-title {
+    position: relative;
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .form-1 {
+      display: block;
+      margin: 0 auto;
+      .main-input {
+        padding: 20px;
+      }
+    }
   }
   margin-bottom: 200px;
 }

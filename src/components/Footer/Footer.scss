@@ -1,0 +1,12 @@
+footer {
+  width: 100%;
+  padding: 75px 0;
+  border-top: 1px rgba(255, 255, 255, 0.15) solid;
+  h3 {
+    font-size: 17px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
