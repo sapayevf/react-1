@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 100px;
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    a {
+      color: rgb(155, 153, 153);
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+  }
+  .header-btns {
+    display: flex;
+    align-items: center;
+  }
+}
