@@ -3,6 +3,70 @@ import Buttons from "./components/Buttons/Buttons";
 import Cards from "./components/Cards/Cards";
 
 function App() {
+  const data = [
+    {
+      id: 1,
+      img: "./assets/icons/figma-icon.svg",
+      name: "FIGMA",
+      free: "Free",
+    },
+    {
+      id: 2,
+      img: "./assets/icons/sketch.svg",
+      name: "Sketch",
+      free: "Free",
+    },
+    {
+      id: 3,
+      img: "./assets/icons/vs.svg",
+      name: "Visual Studio Code",
+      free: "Free",
+    },
+    {
+      id: 4,
+      img: "./assets/icons/notion.svg",
+      name: "Notion",
+      free: "Free",
+    },
+    {
+      id: 5,
+      img: "./assets/icons/slack.svg",
+      name: "Slack",
+      free: "Free",
+    },
+    {
+      id: 6,
+      img: "./assets/icons/invision.svg",
+      name: "Invision",
+      free: "Free",
+    },
+  ];
+  const data2 = [
+    {
+      id: 1,
+      img: "./assets/icons/zeplin.svg",
+      name: "Zeplin",
+      free: "Free",
+    },
+    {
+      id: 2,
+      img: "./assets/icons/phpstorm.svg",
+      name: "PHPStorm",
+      free: "Free",
+    },
+    {
+      id: 3,
+      img: "./assets/icons/toolbox.svg",
+      name: "Toolbox",
+      free: "Free",
+    },
+    {
+      id: 4,
+      img: "./assets/icons/procreate.svg",
+      name: "Procreate",
+      free: "Free",
+    },
+  ];
   return (
     <div className="container">
       <section className="section-1">
@@ -43,12 +107,16 @@ function App() {
           </p>
         </div>
         <div className="s2-cards">
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
+          {data.map((item) => {
+            return (
+              <Cards
+                key={item.id}
+                img={item.img}
+                name={item.name}
+                free={item.free}
+              />
+            );
+          })}
         </div>
         <Buttons className={"s2-btn"}>Load More</Buttons>
       </section>
@@ -66,10 +134,16 @@ function App() {
           <Buttons>Explore more</Buttons>
         </div>
         <div className="s4-cards">
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
-          <Cards></Cards>
+          {data2.map((item) => {
+            return (
+              <Cards
+                key={item.id}
+                img={item.img}
+                name={item.name}
+                free={item.free}
+              />
+            );
+          })}
         </div>
       </section>
       <section className="section-5">
